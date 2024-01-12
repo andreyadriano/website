@@ -1,0 +1,32 @@
+:root {
+    --bg-primary: #000000;
+    --text-light: #FFFFFF;
+}
+
+header {
+    background-color: var(--bg-primary);
+    color: var(--text-light);
+    height: fit-content;
+    opacity: 0.9;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    padding: 12px 0;
+}
+
+header nav {
+    margin-left: auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+header nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    min-width: fit-content;
+    height: fit-content;
+}
