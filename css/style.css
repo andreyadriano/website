@@ -9,14 +9,14 @@ body {
 }
 
 header {
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
     background-color: var(--bg-header);
     color: var(--text-light);
     height: fit-content;
-    opacity: 0.9;
-    position: sticky;
-    top: 0;
+    position: fixed;
     z-index: 1;
-
     padding: 12px 0;
 }
 
@@ -43,12 +43,52 @@ header nav ul li a {
 }
 
 main {
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     gap: 12px;
+    align-items: center;
 }
 
 main section {
-    text-align: left;
+    text-align: center;
     position: relative;
+}
+
+main .home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
+
+main .home-section div {
+    max-width: 800px;
+    width: 100%;
+    margin: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+main .home-section div .home-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+main .home-section div .home-text h1 {
+    width: 100%;
+    font-size: 3.5rem;
+}
+
+main .home-section div .home-text h2 {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+main .home-section div img {
+    width: 30%;
+    border-radius: 50%;
 }
