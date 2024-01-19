@@ -2,6 +2,7 @@
     --bg-header: #000000;
     --bg-main: #FFFFFF;
     --text-light: #FFFFFF;
+    --text-dark: #000000;
     --hover: rgb(103, 182, 103);
 }
 
@@ -36,6 +37,7 @@ header nav ul li {
     padding: 0 0.75rem;
     cursor: pointer;
     list-style: none;
+    cursor: default;
 }
 
 header nav ul li a {
@@ -66,6 +68,10 @@ main section p {
     text-align: justify;
 }
 
+main section a {
+    text-decoration: none;
+}
+
 main section h1 {
     text-align: left;
     font-size: 1.6rem;
@@ -74,6 +80,10 @@ main section h1 {
 
 main section h1:hover {
     color: var(--hover);
+}
+
+main section h2:hover {
+    color: var(--hover)
 }
 
 main .home-section {
@@ -121,6 +131,34 @@ main .aboutme-section {
     width: 100%;
 }
 
+main .projects-section {
+    max-width: 800px;
+}
+
+main .projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .card {
+    text-align: justify;
+    max-width: 300px;
+    margin: 0.8rem;
+}
+
+main .card a {
+    color: var(--text-dark);
+}
+
+main .card h1 {
+    font-size: 1.4rem;
+}
+
+main .card .description {
+    font-size: 1.15rem;
+}
+
 main .contact-section .container {
     margin-top: 1rem;
     max-width: 800px;
@@ -139,8 +177,7 @@ main .contact-section .social-icons {
 }
 
 main .contact-section a {
-    text-decoration: none;
-    color: black;
+    color: var(--text-dark);
 }
 
 main .contact-section a:hover {
