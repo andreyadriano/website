@@ -6,6 +6,10 @@
     --hover: rgb(103, 182, 103);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-main);
 }
