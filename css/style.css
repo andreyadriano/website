@@ -46,6 +46,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: var(--hover);
+    transition: 0.3s;
 }
 
 main {
@@ -79,10 +80,12 @@ main section h1 {
 
 main section h1:hover {
     color: var(--hover);
+    transition: 0.3s;
 }
 
 main section h2:hover {
-    color: var(--hover)
+    color: var(--hover);
+    transition: 0.3s;
 }
 
 main .home-section {
@@ -181,6 +184,7 @@ main .contact-section a {
 
 main .contact-section a:hover {
     color: var(--hover);
+    transition: 0.3s;
 }
 
 main .contact-section i {
