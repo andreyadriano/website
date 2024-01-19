@@ -82,15 +82,14 @@ main .home-section {
     justify-content: center;
     text-align: left;
     width: 100%;
+    margin-top: 4rem;
 }
 
 main .home-section div {
     max-width: 800px;
     width: 100%;
-    margin: 4rem;
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
 main .home-section div .home-text {
