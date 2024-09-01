@@ -1,199 +1,43 @@
 :root {
-    --bg-header: #000000;
-    --bg-main: #FFFFFF;
-    --text-light: #FFFFFF;
-    --text-dark: #212427;
-    --hover: rgb(103, 182, 103);
+  --bg-header: #000000;
+  --bg-main: #FFFFFF;
+  --text-light: #FFFFFF;
+  --text-dark: #212427;
+  --hover: rgb(103, 182, 103);
 }
 
 html {
-    scroll-behavior: smooth;
-    font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
-body {
-    background-color: var(--bg-main);
+.text-light-gray {
+  color: rgb(240, 240, 240);
 }
 
-header {
-    top: 0;
-    width: 100%;
-    background-color: var(--bg-header);
-    color: var(--text-light);
-    height: fit-content;
-    position: fixed;
-    z-index: 1;
-    padding: 12px 0;
+.text-green {
+  color: rgb(103, 182, 103);
 }
 
-header nav ul {
-    margin: auto auto;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 0 2rem;
+.paragraph {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  text-align: justify;
 }
 
-header nav ul li {
-    min-width: fit-content;
-    height: fit-content;
-    padding: 0 0.75rem;
-    cursor: pointer;
-    list-style: none;
-    cursor: default;
+.navbar-nav .nav-link:hover {
+  color: var(--hover);
+  transition: 0.3s;
 }
 
-header nav ul li a {
-    color: var(--text-light);
-    text-decoration: none;
+.hero-section .hero-text h2:hover{
+  color: var(--hover);
+  transition: 0.3s;
 }
 
-header nav ul li a:hover {
-    color: var(--hover);
-    transition: 0.3s;
+.skills-board .col img {
+  opacity: 50%;
 }
 
-main {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-}
-
-main section {
-    text-align: center;
-    position: relative;
-    margin-bottom: 1rem;
-}
-
-main section p {
-    font-size: 1.3rem;
-    text-align: justify;
-}
-
-main section a {
-    text-decoration: none;
-}
-
-main section h1 {
-    text-align: left;
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-}
-
-main section h1:hover {
-    color: var(--hover);
-    transition: 0.3s;
-}
-
-main section h2:hover {
-    color: var(--hover);
-    transition: 0.3s;
-}
-
-main .home-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    width: 100%;
-    margin-top: 4rem;
-}
-
-main .home-section div {
-    max-width: 800px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-main .home-section div .home-text {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-main .home-section div .home-text h1 {
-    width: 100%;
-    font-size: 3.5rem;
-}
-
-main .home-section div .home-text h2 {
-    width: 100%;
-    font-size: 1.5rem;
-}
-
-main .home-section div img {
-    width: 30%;
-    border-radius: 50%;
-}
-
-main .aboutme-section {
-    max-width: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-main .projects-section {
-    max-width: 800px;
-}
-
-main .projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-main .card {
-    text-align: justify;
-    max-width: 300px;
-    margin: 0.8rem;
-}
-
-main .card a {
-    color: var(--text-dark);
-}
-
-main .card h1 {
-    font-size: 1.4rem;
-}
-
-main .card .description {
-    font-size: 1.15rem;
-}
-
-main .contact-section .container {
-    margin-top: 1rem;
-    max-width: 800px;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-main .contact-section .social-icons {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: center;
-    gap: 10px;
-}
-
-main .contact-section a {
-    color: var(--text-dark);
-    font-size:0.9rem;
-}
-
-main .contact-section a:hover {
-    color: var(--hover);
-    transition: 0.3s;
-}
-
-main .contact-section i {
-    opacity: 0.8;
-    font-size: 1.8rem;
+.skills-board .col img:hover {
+  opacity: 100%;
 }

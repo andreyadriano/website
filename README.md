@@ -1,5 +1,3 @@
-# Personal Website
+# My personal website
 
-[See it Live](https://andreyadriano.netlify.app/)
-
-WORK IN PROGRESS
+Technologies used: HTML5 and Bootstrap v5.3
