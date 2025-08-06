@@ -3,6 +3,7 @@
   --bg-main: #FFFFFF;
   --text-light: #FFFFFF;
   --text-dark: #212427;
+  --text-green: #67b667;
   --hover: rgb(103, 182, 103);
 }
 
@@ -14,8 +15,9 @@ html {
   color: rgb(240, 240, 240);
 }
 
+/* Classe única para texto verde, usada para títulos e outros textos */
 .text-green {
-  color: rgb(103, 182, 103);
+  color: var(--text-green) !important;
 }
 
 .paragraph {
@@ -29,18 +31,84 @@ html {
   transition: 0.3s;
 }
 
-.hero-section .hero-text h2:hover{
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* Remover qualquer cor padrão para títulos em bg-dark e forçar verde */
+.bg-dark .section-title {
+  color: var(--text-green) !important;
+}
+
+.hero-section .hero-text h2:hover {
   color: var(--hover);
   transition: 0.3s;
 }
 
+.hero-section img {
+  max-width: 300px;
+  width: 100%;
+}
+
+body {
+  padding-top: 70px; /* previne que a navbar sobreponha o conteúdo */
+}
+
+.sobremim-section p {
+  text-align: justify;
+}
+
+/* Padding horizontal extra para telas pequenas */
+@media (max-width: 576px) {
+  .sobremim-section .container-sm {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
 .skills-board .col img {
+  max-width: 80px;
+  width: 100%;
+  height: auto;
   opacity: 30%;
+  transition: 0.3s ease;
+  margin-bottom: 0.5rem;
 }
 
 .skills-board .col img:hover {
   opacity: 100%;
 }
+
+.skill-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+@media (max-width: 576px) {
+  .skills-board .col img {
+    max-width: 60px;
+  }
+
+  .skill-name {
+    font-size: 0.85rem;
+  }
+}
+
 
 .footer-section p {
   color: var(--text-light);

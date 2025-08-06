@@ -1,194 +1,283 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Andrey Adriano</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  
-  <body>
-    <header>
-      <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
-          <ul class="navbar-nav mx-auto">
-              <li class="nav-item mx-5">
-                  <a class="nav-link active" href="#home">
-                      <i class="fa fa-fw fa-home"></i>
-                      Home
-                  </a>
-              </li>
-              <li class="nav-item mx-5">
-                  <a class="nav-link active" href="#sobre">
-                      <i class="fa fa-fw fa-user"></i>
-                      Sobre
-                  </a>
-              </li>
-              <li class="nav-item mx-5">
-                  <a class="nav-link active" href="#projetos">
-                      <i class="fa fa-fw fa-file-code-o"></i>
-                      Projetos
-                  </a>
-              </li>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrey Adriano</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top shadow" style="background-color: var(--bg-header);">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-light" href="#home">
+          <i class="fa fa-user-circle"></i> Andrey Adriano
+        </a>
+        <button id="navToggle" class="navbar-toggler collapsed" type="button" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item mx-2">
+              <a class="nav-link text-light" href="#home"> <i class="fa fa-fw fa-home"></i> Home </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-light" href="#sobre"> <i class="fa fa-fw fa-user"></i> Sobre </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-light" href="#projetos"> <i class="fa fa-fw fa-file-code-o"></i> Projetos </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-light" href="#skills"> <i class="fa fa-fw fa-cogs"></i> Skills </a>
+            </li>
           </ul>
-      </nav>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main>
-      <section class="hero-section d-flex align-items-center justify-content-center p-5 bg-light mt-5" id="home">
-          <div class="hero-text me-5">
-            <h1 class="display-2 fw-bold">Olá, eu sou <span class="text-green">Andrey</span></h1>
-            <h2 class="fs-3 fst-italic">Engenheiro de Telecomunicações</h2>
-            <h2 class="fs-3 fst-italic">Desenvolvedor de Software</h2>
-            &nbsp;
-            <div class="midias-sociais d-flex gap-3 mb-4">
-              <a href="https://www.linkedin.com/in/andrey-adriano-da-rosa" class="btn btn-primary">
-                <i class="fa fa-linkedin"></i>
-                Linkedin
-              </a>
-              <a href="https://github.com/andreyadriano" class="btn btn-dark">
-                <i class="fa fa-github"></i>
-                Github
-              </a>
-              <a href="mailto:andrey.adriano01@hotmail.com" class="btn btn-secondary">
-                <i class="fa fa-envelope-o"></i>
-                E-mail
-              </a>
-            </div>
-          </div>
-          <img class="img-fluid rounded-circle border border-light" style="max-width: 400px;" src="https://www.github.com/andreyadriano.png" alt="Andrey Adriano">
-      </section>
 
-      <section class="sobremim-section bg-dark d-flex align-items-center justify-content-center px-5" id="sobre">
-        <div class="container-sm px-5 m-3">
-          <h1 class="text-green mr-auto">Sobre mim</h1>
-          <div class="sobremim-text">
-            <p class="paragraph text-light-gray">
-              Meu nome é <b class="text-green">Andrey</b>. Sou desenvolvedor de software e estudante de Engenharia de Telecomunicações no 
-              Instituto Federal de Santa Catarina (IFSC), com previsão de formação em março de 2025.
-              <br>
-              Falo inglês em nível intermediário e tenho uma base sólida de conhecimentos em <b>telecomunicações, desenvolvimento de software, redes de computadores,
-              telefonia, comunicação sem fio e sistemas embarcados</b>, adquiridos durantes os cursos técnico e de engenharia.
-              <br>
-              Atualmente trabalho na empresa <b class="text-green">Intelbras</b>, onde atuo como desenvolvedor de software no segmento de Comunicação Corporativa.
-              No dia-a-dia, desenvolvo aplicações e scripts para Linux embarcado para produtos de telefonia IP, principalmente em C, Lua e bash.
-            </p>
-          </div>
+    <!-- Seção Hero -->
+    <section
+      class="hero-section d-flex flex-column-reverse flex-md-row align-items-center justify-content-center gap-4 p-4 mt-5 text-center text-md-start"
+      id="home">
+      <div class="hero-text">
+        <h1 class="display-2 fw-bold">Olá, eu sou <span class="text-success">Andrey</span></h1>
+        <h2 class="fs-3 fst-italic">Engenheiro de Telecomunicações</h2>
+        <h2 class="fs-3 fst-italic">Desenvolvedor de Software</h2>
+        <div class="midias-sociais d-flex flex-wrap justify-content-center justify-content-md-start gap-3 my-4">
+          <a href="https://www.linkedin.com/in/andrey-adriano-da-rosa" class="btn btn-outline-primary">
+            <i class="fa fa-linkedin"></i> Linkedin
+          </a>
+          <a href="https://github.com/andreyadriano" class="btn btn-outline-dark">
+            <i class="fa fa-github"></i> Github
+          </a>
+          <a href="mailto:andrey.adriano01@hotmail.com" class="btn btn-outline-secondary">
+            <i class="fa fa-envelope-o"></i> E-mail
+          </a>
         </div>
-      </section>
+      </div>
+      <img class="img-fluid rounded-circle border border-3 border-success shadow" style="max-width: 300px;"
+        src="https://www.github.com/andreyadriano.png" alt="Andrey Adriano">
+    </section>
 
-      <section class="projetos-section bg-dark d-flex align-items-center justify-content-center px-5" id="projetos">
-        <div class="container-sm px-5 m-3">
-          <h1 class="text-green mr-auto">Projetos</h1>
-
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-
-            <div class="col">
-              <div class="card h-100">
-                <img src="img/card_xadrez.jpg" class="card-img-top" style="max-height: 200px;" alt="...">
-                <div class="card-body">
-                  <h5>TCC - Xadrez e Visão Computacional</h5>
-                  <p class="card-text">
-                    Projeto em andamento. TCC da Engenharia de Telecomunicações. O objetivo é desenvolver um app
-                    que reconheça lances de xadrez com visão computacional e gere um registro da partida.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <a href="https://wiki.sj.ifsc.edu.br/index.php/Aplicativo_de_Reconhecimento_de_Lances_de_Xadrez_com_Vis%C3%A3o_Computacional" class="btn btn-success">
-                    <i class="fa fa-solid fa-link"></i>
-                    Veja mais
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card h-100">
-                <img src="img/card_website.png" class="card-img-top" style="max-height: 200px;" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Portfolio Profissional</h5>
-                  <p class="card-text">
-                    Este site foi criado para uso como portfolio profissional utilizando HTML, CSS e Bootstrap.
-                    Desenvolvi a página com o objetivo de melhorar minhas habilidades na criação de interfaces web.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <a href="https://github.com/andreyadriano/website" class="btn btn-dark">
-                    <i class="fa fa-github"></i>
-                    Repositório
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card h-100">
-                <img src="img/card-yinyang.png" class="card-img-top" style="max-height: 200px;" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Yin Yang</h5>
-                  <p class="card-text">
-                    Meu primeiro contato com programação em 2019. Joguinho criado para a primeira edição
-                    da Feira de Jogos como Projeto Integrador do curso técnico em telecomunicações.
-                  </p>
-                </div>
-                <div class="card-footer">
-                  <a href="https://piyinyang.github.io/yinyang/" class="btn btn-success">
-                    <i class="fa fa-play"></i>
-                    Jogar
-                  </a>
-                  <a href="https://github.com/piyinyang/yinyang" class="btn btn-dark">
-                    <i class="fa fa-github"></i>
-                    Repositório
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      <section class="skills-section bg-light d-flex align-items-center justify-content-center px-5" id="skills">
-        <div class="container-sm px-5 m-3">
-          <h1 class="text-green mr-auto">Skills</h1>
-          <div class="skills-board row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 row-cols-m-4 text-center">
-            <div class="col"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" style="max-width: 200px;"/></div>
-            <div class="col"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" style="max-width: 200px;"/></div>
-            <div class="col"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" style="max-width: 200px;"/></div>
-            <div class="col"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg" style="max-width: 200px;"/></div>
-      
-            <div class="col"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" style="max-width: 200px;"/></div>
-            <div class="col"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" style="max-width: 200px;"/></div>
-            <div class="col"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" style="max-width: 200px;"/></div>
-            <div class="col"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" style="max-width: 200px;"/></div>
-          
-            <div class="col"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" style="max-width: 200px;"/></div>
-            <div class="col"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" style="max-width: 200px;"/></div>
-            <div class="col"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" style="max-width: 200px;"/></div>
-            <div class="col"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" style="max-width: 200px;"/></div>
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer-section bg-dark px-5 mt-5">
-        <p>
-          Site desenvolvido por Andrey Adriano da Rosa.
-          <br>
-          Tecnologias: HTML5, CSS3 e Bootstrap 5.3.
-          <br>
-          Ícones: fontawesome.com e devicon.dev.
-          <br>
-          Setembro de 2024.
+    <!-- Seção Sobre mim -->
+    <section id="sobre" class="sobremim-section bg-dark text-light py-5">
+      <div class="container-sm">
+        <h1 class="section-title text-green">Sobre mim</h1>
+        <p class="fs-5">
+          Meu nome é <strong class="text-success">Andrey</strong>. Sou engenheiro de telecomunicações 
+          formado pelo Instituto Federal de Santa Catarina (IFSC) em 2025 e atualmente atuo como 
+          desenvolvedor de software na Intelbras.
+          Falo inglês em nível intermediário e trabalho com desenvolvimento de software desde 2023.
         </p>
-      </footer>
+        <p class="fs-5">
+          Devido a minha experiência dupla formação em telecomunicações como técnico e engenheiro, tenho uma base
+          sólida de conhecimentos em <strong>redes de computadores, telefonia, protocolos de comunicação
+          sem fio e sistemas embarcados</strong>, as quais aproveito na minha atuação como desenvolvedor.
+        </p>
+        <p class="fs-5">
+          Atualmente trabalho na empresa <strong class="text-success">Intelbras</strong>, onde atuo como desenvolvedor
+          de software no segmento de Comunicação Corporativa.
+          No dia-a-dia, desenvolvo aplicações e scripts para Linux embarcado para produtos de telefonia IP,
+          principalmente em C, Lua e bash.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="projetos-section bg-dark px-3 px-sm-5 py-5">
+      <div class="container-sm">
+        <h1 class="section-title text-green">Projetos</h1>
+
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/card_xadrez.jpg" class="card-img-top" style="max-height: 200px; object-fit: cover;"
+                alt="...">
+              <div class="card-body">
+                <h5>TCC - Xadrez e Visão Computacional</h5>
+                <p class="card-text">
+                  Projeto em andamento. TCC da Engenharia de Telecomunicações. O objetivo é desenvolver um app
+                  que reconheça lances de xadrez com visão computacional e gere um registro da partida.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://wiki.sj.ifsc.edu.br/index.php/Aplicativo_de_Reconhecimento_de_Lances_de_Xadrez_com_Vis%C3%A3o_Computacional"
+                  class="btn btn-success">
+                  <i class="fa fa-solid fa-link"></i>
+                  Veja mais
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/card_website.png" class="card-img-top" style="max-height: 200px; object-fit: cover;"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Portfolio Profissional</h5>
+                <p class="card-text">
+                  Este site foi criado para uso como portfolio profissional utilizando HTML, CSS e Bootstrap.
+                  Desenvolvi a página com o objetivo de melhorar minhas habilidades na criação de interfaces web.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/andreyadriano/website" class="btn btn-dark">
+                  <i class="fa fa-github"></i>
+                  Repositório
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/card-yinyang.png" class="card-img-top" style="max-height: 200px; object-fit: cover;"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Yin Yang</h5>
+                <p class="card-text">
+                  Meu primeiro contato com programação em 2019. Joguinho criado para a primeira edição
+                  da Feira de Jogos como Projeto Integrador do curso técnico em telecomunicações.
+                </p>
+              </div>
+              <div class="card-footer d-flex flex-column flex-md-row gap-2">
+                <a href="https://piyinyang.github.io/yinyang/" class="btn btn-success">
+                  <i class="fa fa-play"></i>
+                  Jogar
+                </a>
+                <a href="https://github.com/piyinyang/yinyang" class="btn btn-dark">
+                  <i class="fa fa-github"></i>
+                  Repositório
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="skills" class="skills-section bg-light px-3 px-sm-5 py-5">
+      <div class="container-sm">
+        <h1 class="section-title text-green">Skills</h1>
+
+        <div class="skills-board row row-cols-3 row-cols-sm-4 row-cols-md-6 g-4 text-center">
+
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" alt="Golang">
+            <p class="skill-name">Golang</p>
+          </div>
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="ReactJS">
+            <p class="skill-name">ReactJS</p>
+          </div>
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java">
+            <p class="skill-name">Java</p>
+          </div>
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C">
+            <p class="skill-name">C</p>
+          </div>
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg" alt="Lua">
+            <p class="skill-name">Lua</p>
+          </div>
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python">
+            <p class="skill-name">Python</p>
+          </div>
+
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux">
+            <p class="skill-name">Linux</p>
+          </div>
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+            <p class="skill-name">Docker</p>
+          </div>
+          <div class="col">
+            <img src="img/skills/openwrt.png" alt="Asterisk">
+            <p class="skill-name">OpenWrt</p>
+          </div>
+          <div class="col">
+            <img src="img/skills/asterisk.svg" alt="Asterisk">
+            <p class="skill-name">Asterisk</p>
+          </div>
+          <div class="col">
+            <img src="img/skills/sip.svg" alt="Asterisk">
+            <p class="skill-name">Telefonia IP</p>
+          </div>
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git">
+            <p class="skill-name">Git</p>
+          </div>
+
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5">
+            <p class="skill-name">HTML5</p>
+          </div>
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3">
+            <p class="skill-name">CSS3</p>
+          </div>
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript">
+            <p class="skill-name">JavaScript</p>
+          </div>
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+            <p class="skill-name">Bootstrap</p>
+          </div>
+
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL">
+            <p class="skill-name">MySQL</p>
+          </div>
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+            <p class="skill-name">PostgreSQL</p>
+          </div>
+          <div class="col">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="SQLite">
+            <p class="skill-name">SQLite</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer-section bg-dark text-light py-4 text-center mt-5">
+      <p class="mb-0">Desenvolvido por Andrey Adriano da Rosa</p>
+      <small>Tecnologias: HTML5, CSS3 e Bootstrap · Julho de 2025</small>
+    </footer>
+
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="js/layout.js"></script>
+</body>
+
 </html>
