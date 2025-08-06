@@ -48,15 +48,61 @@ html {
   color: var(--text-green) !important;
 }
 
-.hero-section .hero-text h2:hover {
-  color: var(--hover);
-  transition: 0.3s;
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-main);
+}
+
+.hero-section .container-sm {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .hero-section .container-sm {
+    flex-direction: row;
+    text-align: left;
+    gap: 3rem;
+  }
 }
 
 .hero-section img {
   max-width: 300px;
   width: 100%;
+  border-radius: 50%;
+  border: 3px solid var(--text-green);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.hero-text h2:hover {
+  color: var(--hover);
+  transition: 0.3s;
+}
+
+.midias-sociais a {
+  font-weight: 500;
+}
+
 
 body {
   padding-top: 70px; /* previne que a navbar sobreponha o conteúdo */
