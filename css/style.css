@@ -130,11 +130,6 @@ html {
   font-weight: 500;
 }
 
-
-body {
-  padding-top: 70px; /* previne que a navbar sobreponha o conteúdo */
-}
-
 .sobremim-section p {
   text-align: justify;
 }
