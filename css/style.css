@@ -142,6 +142,33 @@ html {
   }
 }
 
+.card-img-fixed {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Mantém proporção widescreen */
+  object-fit: cover;
+}
+
+.card-title-wrapper {
+  font-size: 1.2rem; /* tamanho parecido com h5 */
+  font-weight: bold;
+  min-height: 60px; /* altura mínima igual para todos */
+  display: flex;
+  align-items: center; /* centraliza verticalmente */
+  text-align: center;
+  justify-content: center; /* centraliza horizontalmente */
+  border-bottom: 4px solid var(--text-green); /* bordinha verde */
+}
+
+.card-text {
+  margin-top: 0.6rem;
+}
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 15px rgba(0,0,0,0.15);
